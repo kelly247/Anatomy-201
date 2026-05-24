@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Upper Limbs </title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomy Upper Limb Assessment Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Canvas Confetti CDN Script -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <div class="quiz-container">
+        <!-- Section 1: Registration Form -->
+        <div id="registration-screen" class="screen active">
+            <h2>Upper Limb Anatomy Review</h2>
+            <p>Please log your full details to start</p>
+            <form id="reg-form">
+                <div class="input-group">
+                    <input type="text" id="username" placeholder="Enter your full name" required autocomplete="off">
+                </div>
+                <button type="submit" class="btn">Start Test</button>
+            </form>
+        </div>
+
+        <!-- Section 2: Quiz Assessment Dynamic Layout -->
+        <!-- Section 2: Quiz Assessment Dynamic Layout -->
+<div id="quiz-screen" class="screen">
+    <!-- Student Header Utility Bar -->
+    <div class="student-utility-bar">
+        <div class="student-badge">
+            <span class="badge-icon">👤</span>
+            <span id="active-student-name">Loading Profile...</span>
+        </div>
+        <div class="live-score-pill">
+            Score: <span id="live-score-counter">0</span>
+        </div>
+    </div>
+
+    <div class="quiz-header">
+        <span id="progress-text">Question 1 of 54</span>
+        <div class="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
+    </div>
+
+    <!-- Enhanced Question Presentation Panel -->
+    <div class="question-card">
+        <h3 id="question-text">Question loading placeholder?</h3>
+    </div>
+
+    <div id="options-container" class="options-list">
+        <!-- JavaScript handles buttons instantiation here -->
+    </div>
+
+    <div id="explanation-container" class="explanation-box hidden">
+        <strong>Clinical Notes:</strong> <span id="explanation-text"></span>
+    </div>
+
+    <button id="next-btn" class="btn hidden">Next Question →</button>
+</div>
+
+        <!-- Section 3: Final Portal Metrics Results -->
+        <div id="result-screen" class="screen">
+            <div class="result-icon">🏆</div>
+            <h2>Assessment Completed</h2>
+            <p>Your performance profile has been cataloged successfully.</p>
+            <div class="score-board">
+                <span id="display-name">Participant Identification Reference</span>
+                <div class="final-score" id="score-text">0 / 54</div>
+            </div>
+            <p class="saving-notice" id="db-status">Transmitting scores to live dashboard database...</p>
+        </div>
+    </div>
+
+    <!-- Modular Script App Execution -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>
+    <script type="module" src="./script.js"></script>
+
+  </body>
+  
+</html>
